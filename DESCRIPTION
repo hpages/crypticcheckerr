@@ -1,0 +1,8 @@
+Package: crypticcheckerr
+Title: Reproduce cryptic 'R CMD check' warning/error
+Description: A minimal package to reproduce 'R CMD check' cryptic parse error on Rd files.
+Version: 0.0.1
+License: Artistic-2.0
+Encoding: UTF-8
+Author: Hervé Pagès
+Maintainer: Hervé Pagès <hpages.on.github@gmail.com>
