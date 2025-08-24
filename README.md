@@ -8,9 +8,11 @@ produced by `R CMD check`:
     ** will not attempt to run examples
     * checking examples ... SKIPPED
 
-The name of the file where the parse error happens (`lines`) and the
-line:col numbers are meaningless, so the developer of the package are
-on their own!
+The name of the file where the parse error happens (`lines`) is meaningless
+(the package does not have such file). Also the line:col numbers are incorrect.
+
+The correct location of the parse error is position 12 of line 11 in
+file `man/manpage2.Rd`.
 
 FWIW the issue can be debugged interactively by running:
 
@@ -19,4 +21,6 @@ FWIW the issue can be debugged interactively by running:
     tools:::.check_packages_used_in_examples("crypticcheckerr")
 
 after installing **crypticcheckerr**.
+
+This issue is being tracked here: https://bugs.r-project.org/show_bug.cgi?id=18907
 
